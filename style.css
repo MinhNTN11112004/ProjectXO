@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.title {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10%;
+}
+
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 40px); 
+    grid-gap: 5px;
+}
+
+.cell.x {
+    color: red; /* Màu cho X */
+}
+
+.cell.o {
+    color: blue; /* Màu cho O */
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    
+}
+
+.cell:hover {
+    background-color: yellow;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green
+}
